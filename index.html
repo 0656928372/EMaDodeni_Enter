@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Two Player Matching Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Matching Game: 2 Players</h1>
+  <div class="info" id="status">Player 1's Turn</div>
+  <div class="info" id="scores">P1: 0 | P2: 0</div>
+  <div class="info" id="timer">Timer: 10s</div>
+  <div class="grid" id="gameGrid"></div>
+  <button onclick="restartGame()">Restart Game</button>
+
+  <!-- Sound effects -->
+  <audio id="matchSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_7b0e132edc.mp3"></audio>
+  <audio id="flipSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_9cb7563f4d.mp3"></audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
